@@ -1,0 +1,3 @@
+Résumé du portefeuille boursier:
+  AAPL: 10 actions
+  TSLA: 5 actions
