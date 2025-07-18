@@ -1,97 +1,147 @@
-# CodeAlpha Python Internship Projects
+# CodeAlpha Python Programming Internship Projects
 
-This repository contains two Python projects developed as part of the CodeAlpha Python Programming Internship. These projects demonstrate fundamental Python programming concepts and practical application of learned skills.
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![CodeAlpha](https://img.shields.io/badge/CodeAlpha-Internship-orange.svg)](https://codealpha.tech/)
 
-## Projects Included:
+## 🌟 Welcome to My CodeAlpha Python Programming Internship Projects!
 
-1.  **Hangman Game**
-2.  **Stock Portfolio Tracker**
+This repository showcases my work during the **CodeAlpha Python Programming Internship**. It contains two distinct projects, each designed to challenge and enhance fundamental Python programming skills, object-oriented design, and practical application development.
 
----
+--- 
 
-## 1. Hangman Game
+## 🎮 Task 1: Hangman Game
 
-### Description
+### Overview
 
-The Hangman Game is a classic text-based word-guessing game. The player attempts to guess a hidden word by suggesting letters within a limited number of attempts. For each incorrect guess, a part of a hangman figure is drawn. The game ends when the player correctly guesses the word or runs out of attempts.
+A classic text-based Hangman game where the player guesses a hidden word letter by letter within a limited number of incorrect attempts. This task focuses on core Python concepts such as loops, conditionals, string manipulation, and list handling.
 
-### Features
+### ✨ Features
 
-*   Random word selection from a predefined list.
-*   Display of the current word state (guessed letters and blanks).
-*   Tracking of incorrect guesses and visual representation of the hangman.
-*   Win/loss conditions.
+-   **Text-Based Interface**: Simple and interactive command-line gameplay.
+-   **Predefined Word List**: Uses a small, hardcoded list of words for guessing.
+-   **Limited Guesses**: Players have a set number of incorrect guesses (6 attempts).
+-   **Basic Input/Output**: Handles user input and displays game state (e.g., guessed letters, remaining attempts, word progress) via the console.
 
-### How to Run
+### 🚀 Getting Started (Task 1)
 
-1.  **Prerequisites**: Ensure you have Python 3 installed on your system.
-2.  **Download**: Download the `hangman_game.py` file (or extract it from `hangman_game.tar.gz`).
-3.  **Execute**: Open a terminal or command prompt, navigate to the directory where you saved the file, and run the following command:
+#### Prerequisites
+
+-   Python 3.x
+
+#### Installation
+
+1.  **Navigate to the Task 1 directory:**
     ```bash
-    python3 hangman_game.py
+    cd Task1-hangman_game
     ```
-4.  **Play**: Follow the on-screen prompts to guess letters or the entire word.
 
-### Key Concepts Used
+#### Usage
 
-*   `random` module for word selection.
-*   `while` loops for game flow control.
-*   `if-else` statements for game logic and decision-making.
-*   String and list manipulation for word handling and display.
-*   Basic console input/output.
-
----
-
-## 2. Stock Portfolio Tracker
-
-### Description
-
-The Stock Portfolio Tracker is a simple Python application that allows users to track their stock investments. It calculates the total value of a portfolio based on user-inputted stock names and quantities, using hardcoded stock prices. The application can also save a summary of the portfolio to a text or CSV file.
-
-### Features
-
-*   User input for stock names and quantities.
-*   Calculation of total investment value.
-*   Hardcoded stock prices for predefined stocks.
-*   Option to save portfolio summary to a `.txt` or `.csv` file.
-
-### How to Run
-
-1.  **Prerequisites**: Ensure you have Python 3 installed on your system.
-2.  **Download**: Download the `stock_tracker.py` file (or extract it from `stock_portfolio_tracker.tar.gz`).
-3.  **Execute**: Open a terminal or command prompt, navigate to the directory where you saved the file, and run the following command:
+1.  **Run the game:**
     ```bash
-    python3 stock_tracker.py
+    python main.py
     ```
-4.  **Use**: Follow the on-screen prompts to add stocks and quantities. You will be prompted to save the summary at the end.
 
-### Key Concepts Used
+2.  **Play the game:**
+    Follow the on-screen instructions to guess letters and uncover the hidden word.
 
-*   Dictionaries for storing stock prices and portfolio data.
-*   Basic input/output operations.
-*   Arithmetic operations for value calculation.
-*   File handling (optional, for saving summaries to `.txt` or `.csv`).
+### 🛠️ Technical Implementation (Task 1)
+
+-   **`random` module**: For selecting a word.
+-   **`while` loops**: For game flow.
+-   **`if-else` statements**: For conditional logic.
+-   **Strings & Lists**: For data handling and game state.
 
 ---
 
-## CodeAlpha Internship
+## 📈 Task 2: Stock Portfolio Tracker
 
-These projects were completed as part of the CodeAlpha Python Programming Internship, focusing on practical application of Python skills and problem-solving. The internship aims to provide hands-on experience in Python development and scripting, covering fundamentals, data structures, file handling, OOP concepts, and exploring libraries like Pandas, NumPy, and Flask.
+### Overview
 
-### Mandatory Steps for Internship Completion
+A professional command-line application for tracking your stock portfolio. It allows users to input stock symbols and quantities, then calculates the total investment value by fetching real-time stock prices. This project emphasizes object-oriented design, API integration, and robust error handling.
 
-*   Share internship status on LinkedIn, tagging `@CodeAlpha`.
-*   Complete assigned projects within the given timeframe.
-*   Upload complete source code to GitHub in a repository named `CodeAlpha_ProjectName`.
-*   Post a video explanation of the project on LinkedIn with the GitHub repo link.
-*   Submit completed tasks using the official Submission Form (shared via WhatsApp group).
+### ✨ Features
 
-### Contact Information
+-   **Real-time Stock Prices**: Integrates with Yahoo Finance API via `yfinance` library for up-to-date stock prices.
+-   **Offline Mode**: Gracefully falls back to predefined stock prices when API is unavailable or `yfinance` is not installed.
+-   **Object-Oriented Design**: Clean, modular code structure using `Stock` and `Portfolio` classes.
+-   **Robust Input Validation**: Handles invalid user inputs (e.g., non-numeric quantities, empty symbols) with clear error messages.
+-   **Detailed Investment Summary**: Displays a clear breakdown of each stock holding and the total portfolio value.
+-   **CSV Export**: Option to save the portfolio summary to a CSV file for easy record-keeping and further analysis.
+-   **User-Friendly Interface**: Provides clear instructions and feedback to the user throughout the process.
 
-For any questions, please contact:
+### 🚀 Getting Started (Task 2)
 
-*   **Email**: services@codealpha.tech
-*   **WhatsApp**: +91 9336576683
+#### Prerequisites
 
-Best Regards,
-Teament CodeAlpha
+-   Python 3.x
+-   `pip` (Python package installer)
+
+#### Installation
+
+1.  **Navigate to the Task 2 directory:**
+    ```bash
+    cd Task2-StockPortfolioTracker
+    ```
+
+2.  **Install required Python packages:**
+    ```bash
+    pip install yfinance
+    ```
+    *Note: If you don't install `yfinance`, the application will use predefined stock prices.*
+
+#### Usage
+
+1.  **Run the application:**
+    ```bash
+    python main.py
+    ```
+
+2.  **Follow the interactive prompts:**
+    -   Enter stock symbols (e.g., AAPL, MSFT, GOOG, TSLA)
+    -   Enter the quantity of shares for each stock
+    -   Type `fin` when you're done adding stocks
+    -   Choose whether to save results to CSV
+
+### 🛠️ Technical Implementation (Task 2)
+
+-   **Object-Oriented Programming (OOP)**: Classes (`Stock`, `Portfolio`) for better code organization.
+-   **API Integration**: Real-time data fetching using `yfinance`.
+-   **Error Handling**: Try-catch blocks for robust error management.
+-   **File I/O**: CSV file generation for data persistence.
+-   **User Input Validation**: Ensuring data integrity and user experience.
+
+## 📁 Global Project Structure
+
+```
+CodeAlpha-PythonProgramming/
+├── Task1-hangman_game/
+│   └── main.py             # Main game logic for Hangman
+│   └── README.md           # README for Task 1
+├── Task2-StockPortfolioTracker/
+│   └── main.py             # Main application script for Stock Tracker
+│   └── portfolio_summary.csv # Example output CSV (generated after running)
+│   └── README.md           # README for Task 2
+└── README.md               # This global documentation file
+```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+-   **CodeAlpha** for providing the internship opportunity.
+-   **Yahoo Finance** for stock data API.
+-   **yfinance** library developers for the Python wrapper.
+
+## 📞 Contact
+
+-   **GitHub**: [@hamzakh86](https://github.com/hamzakh86)
+-   **Project Repository**: [CodeAlpha-PythonProgramming](https://github.com/hamzakh86/CodeAlpha-PythonProgramming)
+
+---
+
+*This repository contains projects developed during the CodeAlpha Python Programming Internship.*
+
